@@ -868,18 +868,7 @@
     transform: translateY(-4px);
 }
 
-/* Accent card for Frontend — subtle blue tint border */
-.service-card--accent {
-    border-color: rgba(29, 114, 184, 0.5);
-}
 
-.service-card--accent:hover {
-    border-color: #1d72b8;
-}
-
-.service-card--accent .service-icon {
-    color: #1d72b8;
-}
 
 .service-card--accent h2 {
     color: white;

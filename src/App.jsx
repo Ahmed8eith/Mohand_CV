@@ -6,7 +6,7 @@ import './index.css';
 import {projects} from './projects.js'
 import phone from './assets/icons8-phone-50.png';
 import gmail from './assets/icons8-gmail-50.png';
-import linkedin from './assets/icons8-linkedin-50.png';
+import behance from './assets/icons8-behance-50 (1).png';
 import location from './assets/icons8-location-50.png';
 import analysis from './assets/analytics-32.png';
 import settings from './assets/gear-32.png';
@@ -76,7 +76,7 @@ function App() {
   return (
     <>
      <div className='navbar'>
-        <h1 className='name'>Ahmed Mohamed</h1>
+        <h1 className='name'>Mohand Hany</h1>
         
         <div className='nav-btns'>
           {navItems.map((item) => (
@@ -118,7 +118,7 @@ function App() {
           <h2></h2>
           <h3></h3>
           <div className='landing-btns'>
-            <a href="https://drive.google.com/file/d/1mHUarMbckoIpliZ8ypZyfQlbAG-HcCmi/view?usp=drive_link">
+            <a href="https://drive.google.com/file/d/1LAgrQ7gcqponcux6XBSX2j3AuTRRYmxs/view?usp=drive_link">
             <button>My CV</button></a>
             <button onClick={() => handleNavClick('Contact')}>Contact Info</button>
           </div>
@@ -130,18 +130,23 @@ function App() {
          <div className='about-text'>
             <h1>About Me</h1>
             <h2>
-                My journey started in web development, where I focused on building modern, responsive web applications and exploring how real-world websites are structured and delivered. This gave me a strong foundation in creating functional and user-focused digital experiences, along with a practical understanding of how web applications come together.
-Alongside that, I developed a growing interest in data engineering, which led me to explore data systems, processing pipelines, and backend architecture. Through self-driven learning and hands-on projects, I built strong foundations in data processing, system design, and problem solving.
-I later joined the DEPI internship, where I strengthened my practical experience and transitioned from learning concepts to building real world solutions.
-Today, I work across both web development and data engineering, focusing on building reliable, scalable systems and clean user experiences, while maintaining a strong emphasis on simplicity, structure, and long-term maintainability.
+                About Me
+                My journey in graphic design began through freelance work, where I developed visual solutions for clients across a wide range of industries.
+                Working on branding, logo design, social media content, and marketing materials helped me build a strong foundation in visual communication,
+                creativity, and understanding how effective design supports business goals. As I gained experience, I transitioned into agency environments,
+                collaborating with creative and marketing teams to deliver consistent, client-focused designs while maintaining brand identity across multiple projects.
+                This experience strengthened my ability to work in fast-paced environments, meet deadlines, and adapt to diverse creative requirements.
+                Today, I continue to create impactful visual content as a Graphic Designer, specializing in branding, social media, and marketing design.
+                My focus is on producing clean,
+                engaging, and meaningful designs that not only capture attention but also communicate ideas effectively and help brands build a lasting visual identity.
             </h2>
          </div>
          <div className='about-boxes'>
           <div className='box'>
             <h3>Education</h3>
-            <h4>B.A in languages and translation</h4>
-            <h4>Alsun, Ain-shams University</h4>
-            <h4>2024-2028</h4>
+            <h4>Tourism and Hotels</h4>
+            <h4>Pharaohs Higher Institute of Tourism and Hotels</h4>
+            <h4>Major: Department of Tourism studies</h4>
           </div>
         </div>
       </div>
@@ -152,93 +157,73 @@ Today, I work across both web development and data engineering, focusing on buil
     <div className='experience-card'>
       <div className='exp-header'>
         <div className='exp-title-group'>
-          <h2>Data Engineer Intern</h2>
-          <h3>DEPI</h3>
+          <h2>Graphic Designer | Rwaq, Saudi Arabia</h2>
+          <h3>Rwaq</h3>
         </div>
-        <span className='exp-date'>2025 – 2026</span>
+        <span className='exp-date'>Jul 2025 – Present</span>
       </div>
       <p className='exp-summary'>
-        Applied foundational Data Engineering concepts to real tasks, gaining hands-on
-        experience in building and optimizing data workflows.
+        Create engaging visual content and marketing materials that align with brand identity and business goals.
       </p>
       <ul className='exp-bullets'>
-        <li>Learned the fundamentals of Data Engineering, including ETL, pipelines, data modeling, and workflow design</li>
-        <li>Developed proficiency in Python for data manipulation and processing</li>
-        <li>Applied NumPy for numerical computations and array handling</li>
-        <li>Used Pandas for data cleaning, transformation, and basic analysis</li>
+        <li>Design social media posts, advertisements, and promotional materials</li>
+        <li>Collaborate with the marketing team to deliver creative campaigns</li>
+        <li>Produce high-quality designs while meeting project deadlines</li>
       </ul>
       <div className='exp-tags'>
-        <span>Python</span>
-        <span>ETL</span>
-        <span>Pandas</span>
-        <span>NumPy</span>
-        <span>Data Pipelines</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe Illustrator</span>
+        <span>Adobe Premiere Pro</span>
+        <span>CapCut</span>
       </div>
     </div>
     <div className='experience-card'>
   <div className='exp-header'>
     <div className='exp-title-group'>
-      <h2>Frontend Developer Intern</h2>
-      <h3>Ashtar</h3>
+      <h2>Graphic Designer | Hala World Marketing Agency</h2>
+      <h3>Hala World</h3>
     </div>
-    <span className='exp-date'>Jun 2025 – Dec 2025</span>
+    <span className='exp-date'>Mar 2025 – Jul 2025</span>
   </div>
   <p className='exp-summary'>
-    Gained hands-on experience building responsive and efficient web applications working side to Ashtar's company's Developers,
-    bridging theoretical knowledge with real-world development challenges.
+    Contributed to branding and digital marketing projects for a variety of clients.
   </p>
   <ul className='exp-bullets'>
-    <li>Strengthened skills in data structures, algorithms, and problem-solving within a web development context</li>
-    <li>Built responsive UIs using JavaScript, HTML, and CSS</li>
-    <li>Worked on real-world frontend challenges in a remote environment</li>
+    <li>Designed social media content and marketing assets</li>
+    <li>Worked closely with the creative team to deliver client-focused designs</li>
+    <li>Maintained brand consistency across multiple projects</li>
   </ul>
   <div className='exp-tags'>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>DSA</span>
-    <span>Problem Solving</span>
+    <span>Adobe Photoshop</span>
+      <span>Adobe Illustrator</span>
+      <span>Adobe Premiere Pro</span>
+      <span>CapCut</span>
   </div>
 </div>
-  </div>
-</div>
-
-
-
-
-<div className='courses' id='courses'>
-  <h1>Courses</h1>
-
-  <div className='courses-grid'>
-
-    <div className='course-card'>
-      <div className='course-top'>
-        <span className='course-platform'>EDX Platform</span>
-        <span className='course-tag'>Data Engineering</span>
+<div className='experience-card'>
+      <div className='exp-header'>
+        <div className='exp-title-group'>
+          <h2>Freelance Graphic Designer</h2>
+          <h3>Personal</h3>
+        </div>
+        <span className='exp-date'>Feb 2021 – Present</span>
       </div>
-      <h2>Advanced Python for Data Engineers</h2>
-      <ul className='course-bullets'>
-        <li>Strengthened Python programming for data engineering tasks</li>
-        <li>Performed data cleaning and transformation using Python, NumPy, and Pandas, integrating results with Snowflake</li>
+      <p className='exp-summary'>
+        Worked with a diverse range of clients, delivering creative design solutions across multiple industries.      </p>
+      <ul className='exp-bullets'>
+        <li>Designed logos, branding materials, social media content, and promotional graphics</li>
+        <li>Managed projects from concept to final delivery</li>
+        <li>Built long-term client relationships through consistent, high-quality work</li>
       </ul>
-    </div>
-
-    <div className='course-card'>
-      <div className='course-top'>
-        <span className='course-platform'>Harvard University</span>
-        <span className='course-tag'>Computer Science</span>
+      <div className='exp-tags'>
+        <span>Adobe Photoshop</span>
+        <span>Adobe Illustrator</span>
+        <span>Adobe Premiere Pro</span>
+        <span>CapCut</span>
       </div>
-      <h2>CS50</h2>
-      <ul className='course-bullets'>
-        <li>Learned fundamental concepts of Computer Science, including algorithms, data structures, and problem-solving techniques</li>
-        <li>Gained hands-on programming and problem-solving skills</li>
-      </ul>
     </div>
-
   </div>
 </div>
-
-
 
 
       <div className='skills' id='skills'>
@@ -246,60 +231,44 @@ Today, I work across both web development and data engineering, focusing on buil
         <h1>Skills</h1>
         <div className="skills-box">
           <div className='skill'>
-            <h3>React</h3>
+            <h3>Adobe Photoshop</h3>
             <h5>Experienced</h5>
           </div>
           <div className='skill'>
-            <h3>Javascript</h3>
+            <h3>Adobe Illustrator</h3>
             <h5>Experienced</h5>
           </div>
           <div className='skill'>
-            <h3>CSS</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>Html</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>Problem Solving</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>Tailwind</h3>
-            <h5>Intermediate</h5>
-          </div>
-          <div className='skill'>
-            <h3>Node.js</h3>
+            <h3>Adobe Premiere</h3>
             <h5>Basic</h5>
           </div>
           <div className='skill'>
-            <h3>Express</h3>
+            <h3>CapCut</h3>
             <h5>Basic</h5>
           </div>
           <div className='skill'>
-            <h3>Python</h3>
+            <h3>Logo Design</h3>
             <h5>Experienced</h5>
           </div>
           <div className='skill'>
-            <h3>Numpy</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>Pandas</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>ETL</h3>
-            <h5>Experienced</h5>
-          </div>
-          <div className='skill'>
-            <h3>SQL</h3>
-            <h5>Intermediate</h5>
-          </div>
-          <div className='skill'>
-            <h3>Big Data</h3>
+            <h3>Print Design</h3>
             <h5>Basic</h5>
+          </div>
+          <div className='skill'>
+            <h3>Typography</h3>
+            <h5>Basic</h5>
+          </div>
+          <div className='skill'>
+            <h3>Color Theory</h3>
+            <h5>Basic</h5>
+          </div>
+          <div className='skill'>
+            <h3>Creative Thinking</h3>
+            <h5>Experienced</h5>
+          </div>
+          <div className='skill'>
+            <h3>Attention to Detail</h3>
+            <h5>Experienced</h5>
           </div>
         </div>
       </div>
@@ -309,40 +278,40 @@ Today, I work across both web development and data engineering, focusing on buil
   <h5>What I Offer</h5>
   <h1>Services</h1>
   <p className='services-usp'>
-    Clean architecture, reliable data, and code that lasts.
-    every solution built with clarity and long-term thinking in mind.
+    Creative visuals, strong branding, and designs that leave a lasting impression.
+    Every project is crafted with purpose, clarity, and attention to detail.
   </p>
 
   <div className='services-grid'>
 
-<div className='service-card service-card--accent'>
+<div className='service-card'>
     <div className='service-icon'><img src={website} alt="web" /></div>
-      <h2>Web Development</h2>
-      <p>Building modern, responsive web applications that focus on usability, performance, and clear structure. Turning ideas into functional digital experiences with attention to detail and user experience.</p>
+      <h2>Brand Identity Design</h2>
+      <p>Create memorable logos and cohesive visual identities that help businesses establish a strong and recognizable brand presence.</p>
     </div>
 
     <div className='service-card'>
       <div className='service-icon'><img src={settings} alt="gear" /></div>
-      <h2>Data Pipeline Development</h2>
-      <p>Design and build reliable ETL/ELT pipelines that move, transform, and deliver data efficiently built to scale without breaking.</p>
+      <h2>Social Media Design</h2>
+      <p>Design engaging social media posts, advertisements, and promotional content that capture attention and support marketing goals.</p>
     </div>
 
     <div className='service-card'>
       <div className='service-icon'><img src={storage} alt="storage" /></div>
-      <h2>Database Development </h2>
-      <p>Structure your data layer with clear modeling and thoughtful schema design, so that your Data structure grows with you instead of against you.</p>
+      <h2>Marketing & Promotional Materials </h2>
+      <p>Develop flyers, banners, posters, brochures, and other marketing assets that communicate messages clearly and professionally.</p>
     </div>
 
     <div className='service-card'>
       <div className='service-icon'><img src={verification} alt="verifcation" /></div>
-      <h2>Data Quality & Validation</h2>
-      <p>Implement validation checks and quality gates across your pipelines to catch issues early and keep your data trustworthy.</p>
+      <h2>Logo Design</h2>
+      <p>Design clean, versatile, and memorable logos that reflect a brand's personality and remain effective across digital and print media.</p>
     </div>
 
     <div className='service-card'>
       <div className='service-icon'><img src={analysis} alt="analysis" /></div>
-      <h2>Analytics & Reporting Support</h2>
-      <p>Transform raw data into structured, query ready formats that make reporting and analysis fast, consistent, and meaningful.</p>
+      <h2>Photo Editing & Retouching</h2>
+      <p>Enhance, retouch, and optimize images for marketing, social media, and digital platforms while maintaining a natural, high-quality finish.</p>
     </div>
 
   </div>
@@ -376,16 +345,16 @@ Today, I work across both web development and data engineering, focusing on buil
           </div>
           <div className='contact'>
             <img src={gmail} alt="gmail" />
-            <h4>ahmedghaith879@gmail.com</h4>
+            <h4>kaimohand2019@gmail.com</h4>
           </div>
           <div className='contact'>
             <img src={phone} alt='phone' />
-            <h4>+201030240751</h4>
+            <h4>+201013138725</h4>
           </div>
           <div className='contact'>
-            <img className='linkedin-img' src={linkedin} alt='linkedin' />
-             <a href="https://www.linkedin.com/in/ahmed-mohamed-885496348/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3WN6NMffSZqMumpriqMykQ%3D%3D">
-              <button className='linkedin-btn'>LinkedIn</button>
+            <img className='linkedin-img' src={behance} alt='linkedin' />
+             <a href="https://www.behance.net/mohand-hany">
+              <button className='linkedin-btn'>Behance</button>
             </a>
           </div>
         </div>

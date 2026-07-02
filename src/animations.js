@@ -85,14 +85,14 @@ export const landingAnimation = () => {
       });
       
       new Typed('.landing-text h2', {
-        strings: ["Ahmed Mohamed"],
+        strings: ["Mohand Hany"],
         typeSpeed: 50,
         showCursor: false,
         startDelay: 700
       });
 
       new Typed('.landing-text h3', {
-        strings: ["Web Devloper / Data Engineer"],
+        strings: ["Graphic Designer"],
         typeSpeed: 50,
         showCursor: false,
         startDelay: 1700,
