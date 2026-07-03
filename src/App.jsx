@@ -1,21 +1,25 @@
 import { useEffect, useState} from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
-import myImage from './assets/ana5.JPG';
+import myImage from './assets/mohand-profile.png';
 import './index.css';
-import {projects} from './projects.js'
 import phone from './assets/icons8-phone-50.png';
 import gmail from './assets/icons8-gmail-50.png';
 import behance from './assets/icons8-behance-50 (1).png';
 import location from './assets/icons8-location-50.png';
-import analysis from './assets/analytics-32.png';
-import settings from './assets/gear-32.png';
-import storage from './assets/cloud-storage-32.png';
-import verification from './assets/icons8-approval-32.png';
-import website from './assets/icons8-website-50.png';
+import sparkles from './assets/icons8-sparkles-64.png';
+import hashtag from './assets/icons8-hashtag-64.png';
+import marketing from './assets/icons8-marketing-64.png';
+import diamond from './assets/icons8-diamond-64.png';
+import brandDesign from './assets/icons8-design-50.png';
+import projectImg1 from './assets/projectImg1.jpg'
+import projectImg2 from './assets/projectImg2.jpg'
+import projectImg3 from './assets/projectImg3.jpg'
+import projectImg4 from './assets/projectImg4.jpg'
+import moreProjects from './assets/more-projects.png'
 
 
-import { aboutAnimation, contactsAnimation, skillsAnimation, landingAnimation, projectsAnimation, experienceAnimation, coursesAnimation, servicesAnimation} from './animations.js';
+import { aboutAnimation, contactsAnimation, skillsAnimation, landingAnimation, experienceAnimation, coursesAnimation, servicesAnimation} from './animations.js';
 
 function App() {
 
@@ -29,7 +33,6 @@ function App() {
   useEffect(()=>{
     aboutAnimation()
     skillsAnimation()
-    projectsAnimation()
     contactsAnimation()
     experienceAnimation()
     coursesAnimation()
@@ -40,7 +43,7 @@ function App() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  const navItems = ['About', 'Experience', 'Courses', 'Skills', 'Services', 'Projects', 'Contact'];
+  const navItems = ['About', 'Experience', 'Skills', 'Services', 'Projects', 'Contact'];
 
   const handleNavClick = (section) => {
     closeMenu();
@@ -50,28 +53,6 @@ function App() {
     }
   };
 
-
-  // Handle telegram notification and it's cooldown
-  useEffect(() => {
-    const CD = 10 * 60 * 1000
-    const lastNotified = localStorage.getItem("notification")
-    const now = Date.now()
-
-    if (lastNotified && now - Number(lastNotified) < CD) return
-
-    localStorage.setItem("notification", now)
-
-    fetch("/api/notify", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        userAgent: navigator.userAgent,
-        language: navigator.language,
-        referrer: document.referrer,
-        screen: `${screen.width}x${screen.height}`,
-      }),
-    })
-  }, [])
 
   return (
     <>
@@ -130,8 +111,7 @@ function App() {
          <div className='about-text'>
             <h1>About Me</h1>
             <h2>
-                About Me
-                My journey in graphic design began through freelance work, where I developed visual solutions for clients across a wide range of industries.
+                With over 4 years of experience in graphic design, my journey began through freelance work, where I developed visual solutions for clients across a wide range of industries.
                 Working on branding, logo design, social media content, and marketing materials helped me build a strong foundation in visual communication,
                 creativity, and understanding how effective design supports business goals. As I gained experience, I transitioned into agency environments,
                 collaborating with creative and marketing teams to deliver consistent, client-focused designs while maintaining brand identity across multiple projects.
@@ -143,7 +123,7 @@ function App() {
          </div>
          <div className='about-boxes'>
           <div className='box'>
-            <h3>Education</h3>
+            <h1>Education</h1>
             <h4>Tourism and Hotels</h4>
             <h4>Pharaohs Higher Institute of Tourism and Hotels</h4>
             <h4>Major: Department of Tourism studies</h4>
@@ -196,8 +176,6 @@ function App() {
   <div className='exp-tags'>
     <span>Adobe Photoshop</span>
       <span>Adobe Illustrator</span>
-      <span>Adobe Premiere Pro</span>
-      <span>CapCut</span>
   </div>
 </div>
 <div className='experience-card'>
@@ -218,8 +196,6 @@ function App() {
       <div className='exp-tags'>
         <span>Adobe Photoshop</span>
         <span>Adobe Illustrator</span>
-        <span>Adobe Premiere Pro</span>
-        <span>CapCut</span>
       </div>
     </div>
   </div>
@@ -252,15 +228,15 @@ function App() {
           </div>
           <div className='skill'>
             <h3>Print Design</h3>
-            <h5>Basic</h5>
+            <h5>Experienced</h5>
           </div>
           <div className='skill'>
             <h3>Typography</h3>
-            <h5>Basic</h5>
+            <h5>Experienced</h5>
           </div>
           <div className='skill'>
             <h3>Color Theory</h3>
-            <h5>Basic</h5>
+            <h5>Experienced</h5>
           </div>
           <div className='skill'>
             <h3>Creative Thinking</h3>
@@ -285,31 +261,31 @@ function App() {
   <div className='services-grid'>
 
 <div className='service-card'>
-    <div className='service-icon'><img src={website} alt="web" /></div>
+    <div className='service-icon'><img src={brandDesign} alt="brandDesign" /></div>
       <h2>Brand Identity Design</h2>
       <p>Create memorable logos and cohesive visual identities that help businesses establish a strong and recognizable brand presence.</p>
     </div>
 
     <div className='service-card'>
-      <div className='service-icon'><img src={settings} alt="gear" /></div>
+      <div className='service-icon'><img src={hashtag} alt="hashtag" /></div>
       <h2>Social Media Design</h2>
       <p>Design engaging social media posts, advertisements, and promotional content that capture attention and support marketing goals.</p>
     </div>
 
     <div className='service-card'>
-      <div className='service-icon'><img src={storage} alt="storage" /></div>
+      <div className='service-icon'><img src={marketing} alt="bullseye" /></div>
       <h2>Marketing & Promotional Materials </h2>
       <p>Develop flyers, banners, posters, brochures, and other marketing assets that communicate messages clearly and professionally.</p>
     </div>
 
     <div className='service-card'>
-      <div className='service-icon'><img src={verification} alt="verifcation" /></div>
+      <div className='service-icon'><img src={diamond} alt="diamond" /></div>
       <h2>Logo Design</h2>
       <p>Design clean, versatile, and memorable logos that reflect a brand's personality and remain effective across digital and print media.</p>
     </div>
 
     <div className='service-card'>
-      <div className='service-icon'><img src={analysis} alt="analysis" /></div>
+      <div className='service-icon'><img src={sparkles} alt="sparkles" /></div>
       <h2>Photo Editing & Retouching</h2>
       <p>Enhance, retouch, and optimize images for marketing, social media, and digital platforms while maintaining a natural, high-quality finish.</p>
     </div>
@@ -317,21 +293,57 @@ function App() {
   </div>
 </div>
 
+  <div className="projects" id='projects'>
+    <div className='project-sample'>
+      <img src={projectImg1} alt="Sportswear brand identity" />
+      <h3>
+        A brand identity project for a sportswear clothing label, focused on creating
+        a bold, athletic visual identity that reflects performance and movement.
+        The design balances strong typography with a clean, modern logo mark suited
+        for both apparel tags and digital marketing.
+      </h3>
+    </div>
 
+    <div className='project-sample reversed'>
+      <img src={projectImg2} alt="Egyptian food website logo" />
+      <h3>
+        A logo design created for a website specializing in Egyptian cuisine.
+        The mark blends warmth and authenticity with a modern, approachable feel,
+        aiming to reflect the richness of local flavors while staying versatile
+        across web and packaging use.
+      </h3>
+    </div>
 
-      <h1 className='project-header' id='projects'>My Latest Projects</h1>
-      <div className='projects'>
-        {projects.map((project)=>(
-          <div className='project-box'>
-            <img src={project.icon} alt="icon" />
-            <h2>{project.title}</h2>
-            <h4>{project.description}</h4>
-            <a href={project.link}>
-              <button className='visit-btn'>Visit</button>
-            </a>
-          </div>
-        ))}
-      </div>
+    <div className='project-sample'>
+      <img src={projectImg3} alt="Epex marketing company branding" />
+      <h3>
+        Branding work developed for Epex, a marketing company. The identity was
+        designed to convey professionalism and strategic thinking, with a clean
+        visual language that positions the brand as a credible, results-driven
+        marketing partner.
+      </h3>
+    </div>
+
+    <div className='project-sample reversed'>
+      <img src={projectImg4} alt="Rwaq glass and aluminum company branding" />
+      <h3>
+        A branding project for Rwaq, a glass and aluminum company. The visuals
+        were crafted to highlight the elegance of glass alongside the strength
+        and durability of the material and installation, striking a balance
+        between luxury and structural reliability.
+      </h3>
+    </div>
+</div>
+
+  <div className='more-projects'>
+    <img src={moreProjects} alt="banner" />
+    <div className='more-projects-content'>
+      <h1>"Design is intelligence made visible."</h1>
+      <a href='https://www.behance.net/mohand-hany' className='more-projects-btn'>
+        View More Work
+      </a>
+    </div>
+  </div>
 
       <div className='contacts' id='contact'>
         <div className='contacts-header'>

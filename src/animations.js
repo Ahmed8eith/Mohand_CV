@@ -170,25 +170,6 @@ export const skillsAnimation=()=>{
     })
 }
 
-export const projectsAnimation=()=>{
-    gsap.set('.project-header, .project-box',{
-        opacity:0,
-        x:-40
-    })
-
-    gsap.to('.project-header, .project-box', {
-        scrollTrigger:{
-            trigger:".projects",
-            start:"top 80%",
-            end:"top 20%"
-        },
-        duration:1,
-        x:0,
-        opacity:1,
-        stagger:0.3,
-        ease:"power2.out"
-    })
-}
 
 export const contactsAnimation=()=>{
     gsap.set('.contacts-header h5, .contacts-header h1, .contacts',{
