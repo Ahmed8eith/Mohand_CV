@@ -294,6 +294,14 @@ function App() {
 </div>
 
   <div className="projects" id='projects'>
+    <h5>Take A Look at</h5>
+    <h1>My Projects</h1>
+    <p className='projects-usp'>
+      A selection of branding and design work across different industries
+      each project shaped by the story and goals of the brand behind it.
+    </p>
+
+
     <div className='project-sample'>
       <img src={projectImg1} alt="Sportswear brand identity" />
       <h3>
